@@ -1,11 +1,21 @@
 # Br🍻
 
 ## Description
-A sample project for Rxswift written in MVVM pattern
+A sample project using Rxswift
+
+## Libraries used
+* Moya
+* Rxswift
+* RxCocoa
+* RxOptional
+* Kingfisher
+* Quick
+* Nimble
 
 ## Requirements
 * Xcode 11.0
 * Swift 5.0
+* CocoaPods
 
-## References
-[Naver Tech Concert 2019](http://techcon.naver.com/)  followed protocol oriented MVVM pattern 
+## Architecture
+![alt text](https://github.com/jinvx/Br/blob/master/MVVM.png "mvvm")

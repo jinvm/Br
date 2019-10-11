@@ -22,27 +22,27 @@ class MainTabBarController: UITabBarController {
         case singleBeer
         case randomBeer
     }
-    
+
     let disposeBag = DisposeBag()
     let beerListViewController = BeerListViewController()
     let singleBeerViewController = SingleBeerViewController()
     let randomBeerViewController = RandomBeerViewController()
-    
+
     let tabBarItems: [Tab: UITabBarItem] = [
         .beerList: UITabBarItem(
             title: "Beer List",
-            image:  #imageLiteral(resourceName: "MultipleBeers"),
-            selectedImage:  #imageLiteral(resourceName: "MultipleBeers")
+            image: "🍻".emojiToImage(),
+            selectedImage: "🍻".emojiToImage()
         ),
         .singleBeer: UITabBarItem(
             title: "Single Beer",
-            image: #imageLiteral(resourceName: "SingleBeer"),
-            selectedImage: #imageLiteral(resourceName: "SingleBeer")
+            image: "🍺".emojiToImage(),
+            selectedImage: "🍺".emojiToImage()
         ),
         .randomBeer: UITabBarItem(
             title: "Random Beer",
-            image:  #imageLiteral(resourceName: "SingleBeerWithBubble"),
-            selectedImage: #imageLiteral(resourceName: "SingleBeerWithBubble")
+            image:  "🎲".emojiToImage(),
+            selectedImage: "🎲".emojiToImage()
         )
     ]
     

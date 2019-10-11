@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3526F02350921800645C47 /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3526EF2350921800645C47 /* String+UIImage.swift */; };
 		3CFD3DA02350470A002C0CFE /* SingleBeerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3D9F2350470A002C0CFE /* SingleBeerSpec.swift */; };
 		3CFD3DCF23504C7D002C0CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD3DAF23504C7D002C0CFE /* Assets.xcassets */; };
 		3CFD3DD223504C7D002C0CFE /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB523504C7D002C0CFE /* Beer.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		3864B9B6B5BF434061D44E9A /* Pods_Br.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Br.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3526EF2350921800645C47 /* String+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIImage.swift"; sourceTree = "<group>"; };
 		3CFD3D8523504709002C0CFE /* Br.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Br.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFD3D9623504709002C0CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CFD3D9B2350470A002C0CFE /* BrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 				3CFD3DB923504C7D002C0CFE /* BeerDataParsable.swift */,
 				3CFD3DF023506532002C0CFE /* Observable+Optional.swift */,
 				3CFD3DF2235066D8002C0CFE /* Result.swift */,
+				3C3526EF2350921800645C47 /* String+UIImage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				3CFD3DDE23504C7D002C0CFE /* MainTabBarViewModel.swift in Sources */,
 				3CFD3DEA2350556D002C0CFE /* BeerSelectedViewController.swift in Sources */,
 				3CFD3DD323504C7D002C0CFE /* Constants.swift in Sources */,
+				3C3526F02350921800645C47 /* String+UIImage.swift in Sources */,
 				3CFD3DE123504C7D002C0CFE /* SingleBeerViewController.swift in Sources */,
 				3CFD3DE223504C7D002C0CFE /* RandomBeerViewModel.swift in Sources */,
 				3CFD3DD523504C7D002C0CFE /* BeerDataParsable.swift in Sources */,
