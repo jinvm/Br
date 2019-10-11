@@ -12,7 +12,7 @@ A sample project using Rxswift
 ![alt text](https://github.com/jinvx/Br/blob/master/MVVM.png 
 "mvvm")
 
-[Naver Tech Concert 2019](https://www.google.com) *
+[Naver Tech Concert 2019](http://techcon.naver.com/) *
 
 ## Libraries used
 * Moya
