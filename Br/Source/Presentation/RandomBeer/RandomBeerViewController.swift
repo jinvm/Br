@@ -50,7 +50,7 @@ class RandomBeerViewController: UIViewController {
         nameLabel.textColor = .darkGray
         nameLabel.numberOfLines = 0
         
-        descriptionLabel.font = .systemFont(ofSize: 16, weight: .black)
+        descriptionLabel.font = .systemFont(ofSize: 14, weight: .black)
         descriptionLabel.textColor = .gray
         descriptionLabel.numberOfLines = 0
         
@@ -73,41 +73,37 @@ class RandomBeerViewController: UIViewController {
     
     private func setupConstraints() {
         
-        [idLabel, nameLabel, descriptionLabel, beerImageView, randomButton]
-        .forEach {
-            $0.translatesAutoresizingMaskIntoConstraints = false
+        beerImageView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
+            $0.centerX.equalToSuperview()
+            $0.height.equalTo(240)
         }
-    
-        NSLayoutConstraint.activate([
-            beerImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                                               constant: 20),
-            beerImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            beerImageView.heightAnchor.constraint(equalToConstant: 240),
-            
-            idLabel.topAnchor.constraint(equalTo: beerImageView.bottomAnchor,
-                                         constant: 12),
-            idLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-          
-            
-            nameLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor,
-                                           constant: 12),
-            nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-           
-            
-            descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor,
-                                                  constant: 12),
-            descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            descriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor,
-                                                    constant: 20),
-            descriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor,
-                                                    constant: -20),
-            
-            randomButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -60),
-            randomButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            randomButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
-            randomButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
-            randomButton.heightAnchor.constraint(equalToConstant: 56)
-        ])
+        
+        idLabel.snp.makeConstraints {
+            $0.top.equalTo(beerImageView.snp.bottom).offset(12)
+            $0.centerX.equalToSuperview()
+        }
+        
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(idLabel.snp.bottom).offset(12)
+            $0.centerX.equalToSuperview()
+        }
+        
+        descriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(nameLabel.snp.bottom).offset(12)
+            $0.centerX.equalToSuperview()
+            $0.left.equalToSuperview().offset(20)
+            $0.right.equalToSuperview().offset(-20)
+        }
+        
+        randomButton.snp.makeConstraints {
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-40)
+            $0.centerX.equalToSuperview()
+            $0.left.equalToSuperview().offset(20)
+            $0.right.equalToSuperview().offset(-20)
+            $0.height.equalTo(56)
+        }
+        
     }
 
     func bind(_ viewModel: RandomBeerViewBindable) {

@@ -14,7 +14,7 @@
 		3CFD3DD323504C7D002C0CFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB723504C7D002C0CFE /* Constants.swift */; };
 		3CFD3DD423504C7D002C0CFE /* Reactive+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB823504C7D002C0CFE /* Reactive+ViewController.swift */; };
 		3CFD3DD523504C7D002C0CFE /* BeerDataParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB923504C7D002C0CFE /* BeerDataParsable.swift */; };
-		3CFD3DD623504C7D002C0CFE /* Netowrking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBB23504C7D002C0CFE /* Netowrking.swift */; };
+		3CFD3DD623504C7D002C0CFE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBB23504C7D002C0CFE /* Networking.swift */; };
 		3CFD3DD723504C7D002C0CFE /* PunkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBC23504C7D002C0CFE /* PunkAPI.swift */; };
 		3CFD3DD823504C7D002C0CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBD23504C7D002C0CFE /* AppDelegate.swift */; };
 		3CFD3DD923504C7D002C0CFE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBF23504C7D002C0CFE /* MainTabBarController.swift */; };
@@ -63,7 +63,7 @@
 		3CFD3DB723504C7D002C0CFE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CFD3DB823504C7D002C0CFE /* Reactive+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+ViewController.swift"; sourceTree = "<group>"; };
 		3CFD3DB923504C7D002C0CFE /* BeerDataParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDataParsable.swift; sourceTree = "<group>"; };
-		3CFD3DBB23504C7D002C0CFE /* Netowrking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Netowrking.swift; sourceTree = "<group>"; };
+		3CFD3DBB23504C7D002C0CFE /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		3CFD3DBC23504C7D002C0CFE /* PunkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunkAPI.swift; sourceTree = "<group>"; };
 		3CFD3DBD23504C7D002C0CFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CFD3DBF23504C7D002C0CFE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 			children = (
 				3CFD3DBD23504C7D002C0CFE /* AppDelegate.swift */,
 				3CFD3DCE23504C7D002C0CFE /* SceneDelegate.swift */,
-				3CFD3DBA23504C7D002C0CFE /* Netowrk */,
+				3CFD3DBA23504C7D002C0CFE /* Netwwork */,
 				3CFD3DB423504C7D002C0CFE /* Entity */,
 				3CFD3DBE23504C7D002C0CFE /* Presentation */,
 				3CFD3DB623504C7D002C0CFE /* Utils */,
@@ -204,13 +204,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		3CFD3DBA23504C7D002C0CFE /* Netowrk */ = {
+		3CFD3DBA23504C7D002C0CFE /* Netwwork */ = {
 			isa = PBXGroup;
 			children = (
-				3CFD3DBB23504C7D002C0CFE /* Netowrking.swift */,
+				3CFD3DBB23504C7D002C0CFE /* Networking.swift */,
 				3CFD3DBC23504C7D002C0CFE /* PunkAPI.swift */,
 			);
-			path = Netowrk;
+			path = Netwwork;
 			sourceTree = "<group>";
 		};
 		3CFD3DBE23504C7D002C0CFE /* Presentation */ = {
@@ -491,7 +491,7 @@
 				3CFD3DD723504C7D002C0CFE /* PunkAPI.swift in Sources */,
 				3CFD3DE523504C7D002C0CFE /* SceneDelegate.swift in Sources */,
 				3CFD3DDC23504C7D002C0CFE /* BeerListViewModel.swift in Sources */,
-				3CFD3DD623504C7D002C0CFE /* Netowrking.swift in Sources */,
+				3CFD3DD623504C7D002C0CFE /* Networking.swift in Sources */,
 				3CFD3DE323504C7D002C0CFE /* RandomBeerModel.swift in Sources */,
 				3CFD3DE023504C7D002C0CFE /* SingleBeerModel.swift in Sources */,
 			);

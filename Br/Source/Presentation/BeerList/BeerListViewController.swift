@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SnapKit
 
 protocol BeerListViewBindable: BeerSelectedViewBindable {
     var beerListData: Driver<[BeerData]> { get }
@@ -45,14 +46,9 @@ class BeerListViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        ])
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
      
     func bind(_ viewModel: BeerListViewBindable) {

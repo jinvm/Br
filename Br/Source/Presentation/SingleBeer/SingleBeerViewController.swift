@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Kingfisher
+import SnapKit
 
 protocol SingleBeerViewBindable {
     var searchButtonClicked: PublishRelay<String?> { get }
@@ -77,35 +78,28 @@ class SingleBeerViewController: UIViewController {
     
     private func setupConstraints() {
         
-        [beerImageView, idLabel, nameLabel, descriptionLabel]
-        .forEach {
-            $0?.translatesAutoresizingMaskIntoConstraints = false
+        beerImageView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(22)
+            $0.centerX.equalToSuperview()
+            $0.width.height.equalTo(240)
         }
         
-        NSLayoutConstraint.activate([
-            beerImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                                               constant: 20),
-            beerImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            beerImageView.heightAnchor.constraint(equalToConstant: 240),
-            
-            idLabel.topAnchor.constraint(equalTo: beerImageView.bottomAnchor,
-                                         constant: 12),
-            idLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-          
-            
-            nameLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor,
-                                           constant: 12),
-            nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-           
-            
-            descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor,
-                                                  constant: 12),
-            descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            descriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor,
-                                                    constant: 20),
-            descriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor,
-                                                    constant: -20),
-        ])
+        idLabel.snp.makeConstraints {
+            $0.top.equalTo(beerImageView.snp.bottom).offset(20)
+            $0.centerX.equalToSuperview()
+        }
+        
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(idLabel.snp.bottom).offset(12)
+            $0.centerX.equalToSuperview()
+        }
+        
+        descriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(nameLabel.snp.bottom).offset(12)
+            $0.centerX.equalToSuperview()
+            $0.left.right.equalToSuperview().inset(20)
+        }
+        
     }
     
     // MARK: BINDING UI

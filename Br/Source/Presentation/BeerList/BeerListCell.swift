@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class BeerListCell: UITableViewCell {
         
@@ -56,44 +57,34 @@ class BeerListCell: UITableViewCell {
           addSubview(beerImageView)
       }
       
-      private func setupConstraints() {
-          
-          [idLabel, nameLabel, descriptionLabel, beerImageView]
-            .forEach {
-              $0.translatesAutoresizingMaskIntoConstraints = false
-            }
-          
-          let descriptionTopAnchor = descriptionLabel.topAnchor
-            .constraint(equalTo: nameLabel.bottomAnchor, constant: 4)
-          descriptionTopAnchor.priority = UILayoutPriority(rawValue: 1000)
-
-          let descriptionBottomAnchor = descriptionLabel.bottomAnchor
-            .constraint(equalTo: bottomAnchor, constant: -16)
-          descriptionBottomAnchor.priority = UILayoutPriority(rawValue: 1000)
-          
-          NSLayoutConstraint.activate([
-              
-              beerImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0),
-              beerImageView.heightAnchor.constraint(equalToConstant: 120),
-              beerImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 0),
-              beerImageView.widthAnchor.constraint(equalToConstant: 120),
-              
-              idLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-              idLabel.heightAnchor.constraint(equalToConstant: 20),
-              idLabel.leftAnchor.constraint(equalTo: beerImageView.rightAnchor, constant: 8),
-              idLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -8),
-              
-              nameLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 4),
-              nameLabel.heightAnchor.constraint(equalToConstant: 20),
-              nameLabel.leftAnchor.constraint(equalTo: beerImageView.rightAnchor, constant: 8),
-              nameLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -8),
-              
-              descriptionLabel.leftAnchor.constraint(equalTo: beerImageView.rightAnchor, constant: 8),
-              descriptionLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -8),
-              descriptionTopAnchor,
-              descriptionBottomAnchor
-          ])
-      }
-
+    private func setupConstraints() {
+        
+        beerImageView.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview().inset(16)
+            $0.left.equalToSuperview()
+            $0.height.width.equalTo(120)
+        }
+        
+        idLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(16)
+            $0.left.equalTo(beerImageView.snp.right).offset(8)
+            $0.height.equalTo(20)
+            $0.right.equalToSuperview().offset(-8)
+        }
+        
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(idLabel.snp.bottom).offset(4)
+            $0.height.equalTo(20)
+            $0.left.equalTo(beerImageView.snp.right).offset(8)
+            $0.right.equalToSuperview().offset(-8)
+        }
+        
+        descriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(nameLabel.snp.bottom).offset(6).priority(1000)
+            $0.bottom.lessThanOrEqualToSuperview().offset(-16).priority(800)
+            $0.left.equalTo(nameLabel)
+            $0.right.equalToSuperview().offset(-8)
+        }
+    }
 
 }

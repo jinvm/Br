@@ -11,6 +11,7 @@ target 'Br' do
   pod 'RxCocoa', '~> 4.0'
   pod 'Kingfisher', '~> 5.0'
   pod 'RxOptional'
+  pod 'SnapKit', '~> 5.0.0'
 
   target 'BrTests' do
     inherit! :search_paths
