@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3C3526F02350921800645C47 /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3526EF2350921800645C47 /* String+UIImage.swift */; };
+		3CDF43DA235979C800C9953D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF43D8235979C800C9953D /* Networking.swift */; };
+		3CDF43DB235979C800C9953D /* PunkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF43D9235979C800C9953D /* PunkAPI.swift */; };
 		3CFD3DA02350470A002C0CFE /* SingleBeerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3D9F2350470A002C0CFE /* SingleBeerSpec.swift */; };
 		3CFD3DCF23504C7D002C0CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD3DAF23504C7D002C0CFE /* Assets.xcassets */; };
 		3CFD3DD223504C7D002C0CFE /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB523504C7D002C0CFE /* Beer.swift */; };
 		3CFD3DD323504C7D002C0CFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB723504C7D002C0CFE /* Constants.swift */; };
 		3CFD3DD423504C7D002C0CFE /* Reactive+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB823504C7D002C0CFE /* Reactive+ViewController.swift */; };
 		3CFD3DD523504C7D002C0CFE /* BeerDataParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DB923504C7D002C0CFE /* BeerDataParsable.swift */; };
-		3CFD3DD623504C7D002C0CFE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBB23504C7D002C0CFE /* Networking.swift */; };
-		3CFD3DD723504C7D002C0CFE /* PunkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBC23504C7D002C0CFE /* PunkAPI.swift */; };
 		3CFD3DD823504C7D002C0CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBD23504C7D002C0CFE /* AppDelegate.swift */; };
 		3CFD3DD923504C7D002C0CFE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DBF23504C7D002C0CFE /* MainTabBarController.swift */; };
 		3CFD3DDA23504C7D002C0CFE /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD3DC123504C7D002C0CFE /* BeerListCell.swift */; };
@@ -53,6 +53,8 @@
 /* Begin PBXFileReference section */
 		3864B9B6B5BF434061D44E9A /* Pods_Br.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Br.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3526EF2350921800645C47 /* String+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIImage.swift"; sourceTree = "<group>"; };
+		3CDF43D8235979C800C9953D /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		3CDF43D9235979C800C9953D /* PunkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunkAPI.swift; sourceTree = "<group>"; };
 		3CFD3D8523504709002C0CFE /* Br.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Br.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFD3D9623504709002C0CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CFD3D9B2350470A002C0CFE /* BrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +65,6 @@
 		3CFD3DB723504C7D002C0CFE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CFD3DB823504C7D002C0CFE /* Reactive+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+ViewController.swift"; sourceTree = "<group>"; };
 		3CFD3DB923504C7D002C0CFE /* BeerDataParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDataParsable.swift; sourceTree = "<group>"; };
-		3CFD3DBB23504C7D002C0CFE /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		3CFD3DBC23504C7D002C0CFE /* PunkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunkAPI.swift; sourceTree = "<group>"; };
 		3CFD3DBD23504C7D002C0CFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CFD3DBF23504C7D002C0CFE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3CFD3DC123504C7D002C0CFE /* BeerListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
@@ -121,6 +121,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3CDF43D7235979C800C9953D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3CDF43D8235979C800C9953D /* Networking.swift */,
+				3CDF43D9235979C800C9953D /* PunkAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		3CFD3D7C23504709002C0CFE = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +184,7 @@
 			children = (
 				3CFD3DBD23504C7D002C0CFE /* AppDelegate.swift */,
 				3CFD3DCE23504C7D002C0CFE /* SceneDelegate.swift */,
-				3CFD3DBA23504C7D002C0CFE /* Netwwork */,
+				3CDF43D7235979C800C9953D /* Network */,
 				3CFD3DB423504C7D002C0CFE /* Entity */,
 				3CFD3DBE23504C7D002C0CFE /* Presentation */,
 				3CFD3DB623504C7D002C0CFE /* Utils */,
@@ -202,15 +211,6 @@
 				3C3526EF2350921800645C47 /* String+UIImage.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		3CFD3DBA23504C7D002C0CFE /* Netwwork */ = {
-			isa = PBXGroup;
-			children = (
-				3CFD3DBB23504C7D002C0CFE /* Networking.swift */,
-				3CFD3DBC23504C7D002C0CFE /* PunkAPI.swift */,
-			);
-			path = Netwwork;
 			sourceTree = "<group>";
 		};
 		3CFD3DBE23504C7D002C0CFE /* Presentation */ = {
@@ -472,6 +472,7 @@
 			files = (
 				3CFD3DDD23504C7D002C0CFE /* BeerListViewController.swift in Sources */,
 				3CFD3DD423504C7D002C0CFE /* Reactive+ViewController.swift in Sources */,
+				3CDF43DB235979C800C9953D /* PunkAPI.swift in Sources */,
 				3CFD3DD223504C7D002C0CFE /* Beer.swift in Sources */,
 				3CFD3DD923504C7D002C0CFE /* MainTabBarController.swift in Sources */,
 				3CFD3DDF23504C7D002C0CFE /* SingleBeerViewModel.swift in Sources */,
@@ -488,10 +489,9 @@
 				3CFD3DDA23504C7D002C0CFE /* BeerListCell.swift in Sources */,
 				3CFD3DD823504C7D002C0CFE /* AppDelegate.swift in Sources */,
 				3CFD3DE423504C7D002C0CFE /* RandomBeerViewController.swift in Sources */,
-				3CFD3DD723504C7D002C0CFE /* PunkAPI.swift in Sources */,
 				3CFD3DE523504C7D002C0CFE /* SceneDelegate.swift in Sources */,
 				3CFD3DDC23504C7D002C0CFE /* BeerListViewModel.swift in Sources */,
-				3CFD3DD623504C7D002C0CFE /* Networking.swift in Sources */,
+				3CDF43DA235979C800C9953D /* Networking.swift in Sources */,
 				3CFD3DE323504C7D002C0CFE /* RandomBeerModel.swift in Sources */,
 				3CFD3DE023504C7D002C0CFE /* SingleBeerModel.swift in Sources */,
 			);
